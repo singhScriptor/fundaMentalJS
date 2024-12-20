@@ -25,4 +25,18 @@ function add(a, b){
 var sum = add(number1, number2); // line 2
 console.log(sum) //line 3
 console.log(answer) //line 4
-//
+
+// what is call stack?
+/* call stack only for managing the whole context of execution in javascript
+first layer will be global execution context and then function execution context then it will remove 
+and then it will move for the next function.
+*/
+
+//call stack also known as:
+/*
+execution context stack
+program stack
+control stack
+runtime stack
+machine stack
+*/
