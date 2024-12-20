@@ -1,13 +1,13 @@
-// function a(){
-//     console.log(b)// this will give output 10
-//     //this is because of scope
-//     /*a scope where you can access a specific variable and 
-//     and function in a code*/
-//     var b=10
-// }
-// //var b=10
-// a()
-// console.log(b) // now this will give reference error
+function a(){
+    console.log(b)// this will give output 10
+    //this is because of scope
+    /*a scope where you can access a specific variable and 
+    and function in a code*/
+    var b=10
+}
+//var b=10
+a()
+console.log(b) // now this will give reference error
 
 //there are 3 types of scope
 /*
