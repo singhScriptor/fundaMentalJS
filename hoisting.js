@@ -33,4 +33,3 @@ greet("namaste india") //this will work as a varibale and greet will be undefine
 var greet = function(message){
     console.log(message)
 }
-
