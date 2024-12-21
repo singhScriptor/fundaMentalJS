@@ -1,5 +1,7 @@
 // let and const is also hoisted but in a temporal dead zone
 
+//temporal dead zone is a time period between the variable creation and initialization
+
 // let a=10
 // console.log(a)
 
