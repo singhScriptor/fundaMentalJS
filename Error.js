@@ -36,3 +36,12 @@ const b=20//this will throw a syntax error because b is already defined in the c
 //but with var it will not throw any error
 var c=10
 var c=20//this will not throw any error because var can be redefined
+
+
+//Note:
+/* 
+
+let can be initialized only and then assinged a value later .
+but const must be initialized and assigned a value at the same time.
+
+*/
