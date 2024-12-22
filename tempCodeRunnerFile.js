@@ -1,58 +1,23 @@
-function a(){
-//     console.log(b)// this will give output 10
-//     //this is because of scope
-//     /*a scope where you can access a specific variable and 
-//     and function in a code*/
-//     var b=10
+var a='Hey there!'
+// {
+//     var a='Hello world' //even in block scope var is global scope so it reassign the value.
 // }
-// //var b=10
-// a()
-// console.log(b) // now this will give reference error
+// console.log(a) //this will throw an error cause let is block scope variable and it is not accessible from outside of block.
 
-// //there are 3 types of scope
-// /*
-// 1:Global Scope
-// 2:Function Scope
-// 3:Block Scope
+
+// /* what if you use let or const outside of block scope and inside the block scope with same name? */
+// let b='Hey there!'
+// {
+//     let b='Hello world' //it will not reassign the value of b cause let is block scope variable.
+// }
+// console.log(b)
+
+// /* 
+// now what if a reassign the value of global variable with same name in block scope? 
 // */
 
-// //Global Scope:
-// /*
-// variable can be declared outside of function or block
-// in the global scope they are acceeible from any part of the code
-// */
-
-// //Example:
-// var globalVar="I am a global variable"
-// function globalFunction(){
-//     console.log(globalVar)//accessing global variable
+// let c='Hey there!'
+// {
+//     let c='Hello world' //it will not print anything because it is not accessible from outside of block.
 // }
-// globalFunction()
-// console.log(globalVar)//accessing global variable
-
-// //Function Scope:
-
-// /*      
-// in functon scope variable can be accessed only inside the function
-// */
-// function functionScope(){
-//     var functionVar="I am a function variable"
-//     console.log(functionVar)//accessing function variable
-// }
-// functionScope()
-// console.log(functionVar) // this will throw an error (not defined) becuase it is not accessible from outside of function.
-
-
-// //Block Scope:
-// /*
-// in block scope variable can be accessed only inside the block (eg:{},like :- if,for,while,switch,try,catch,then)
-// */
-
-
-// //Example::
-// if (true) {
-//     let blockVar = "I am a block variable";
-//     console.log(blockVar); // Accessible here
-// }
-
-// console.log(blockVar); 
+// console.log(c) 
