@@ -56,3 +56,10 @@ if (true) {
 }
 
 console.log(blockVar); // Error: blockVar is not defined
+
+//but if you use global scope in scope it can be accessed cause it will store in global scope not in block scope so you can access it.
+{
+    var global="Hello world it will be accessed from outside"
+
+}
+console.log(global)
