@@ -60,3 +60,13 @@ const myF=()=>{
 }
 let m=myF()
 m()
+
+function lexoS(){
+    let dab="Hello India"
+    let zab=()=>{
+        return dab
+    }
+    return zab
+}
+let ab=lexoS()
+console.log(ab())
