@@ -8,7 +8,7 @@ let validParenthesis=(s)=>{
     }
     return true
 }
-let s='{}{]'
+let s='({}{])'
 console.log(validParenthesis(s))
 
 
@@ -19,5 +19,7 @@ console.log(validParenthesis(s))
 let str='Hello World'
 let ans=str.replace('World','Universe')
 console.log(ans)
+
+
 
 
