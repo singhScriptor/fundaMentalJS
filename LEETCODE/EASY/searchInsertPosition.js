@@ -16,7 +16,7 @@ console.log(searchInsertPosition(nums,target))
 
 const indexPosition=(nums,target)=>{
     let left=0,right=nums.length-1
-    while(left<right){
+    while(left<=right){
         let mid=Math.floor((left+right)/2)
         if(nums[mid]==target){
             return mid
