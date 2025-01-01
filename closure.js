@@ -70,3 +70,10 @@ function lexoS(){
 }
 let ab=lexoS()
 console.log(ab())
+
+/*
+closure is a method where we use lexical scope 
+of variable and function and outer is being called
+even after the exection from the inner function
+*/
+
