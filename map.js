@@ -43,3 +43,5 @@ function doubleEven(ele,index,newArr){
   else return ele // now it will print odd element
 }
 console.log(newArr)
+
+//map which will return a new array while iterating the array
