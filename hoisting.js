@@ -1,6 +1,6 @@
 // HOISTING :
 /* 
-hoisting is a method where variable and function declaration will be called first before the execution of the code
+hoisting is a behaviour of javascript where variable and function declaration will be called first before the execution of the code
 
 */
 
