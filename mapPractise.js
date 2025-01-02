@@ -39,3 +39,5 @@ let multiplyD={
 }
 let frr=[1,2,3,4,5]
 console.log(multiplyD.multi(frr))
+
+//map return a new array while iterating the array
