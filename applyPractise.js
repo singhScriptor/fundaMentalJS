@@ -17,3 +17,17 @@ function totalSum(e,f,g,h){
 }
 console.log(totalSum.apply(obj,frr))
 
+//maximumNumber 
+function findMaximum(numbers){
+    return Math.max.apply(null,numbers)
+}
+let numbers=[1,6,3,9,4,11,0]
+console.log(findMaximum(numbers))
+
+
+// function caps(strings){
+//     return strings.map(str=>str.toUpperCase())
+// }
+// let strings=["hello","world","save","dave"]
+// console.log(caps(strings))
+
