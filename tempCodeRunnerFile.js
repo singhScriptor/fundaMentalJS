@@ -1,12 +1,3 @@
-function m(){
-//     for(var i=1;i<=7;i++){
-//         let p= (i)=>{
-//             setTimeout(()=>{
-//                 console.log(i)
-//             },i*3000)
-//         }
-//         p(i)
-//     }
-//     console.log('Kismis')
-// }
-// m()
+setTimeout(function(){ //here function directly used as an argument
+//     console.log("This's is an anonymous function")
+// },1000)
