@@ -78,6 +78,18 @@ console.log(jill.table)
 jill.cleanTable()
 
 //this in class
+class Example{
+    constructor(name,id){
+        this.name=name
+        this.id=id
+    }
+    attributes(){
+        console.log(`Name ${this.name} Email ${this.id}`)
+
+    }
+}
+let Rahul=new Example("Rahul",1)
+Rahul.attributes()
 
 
 
