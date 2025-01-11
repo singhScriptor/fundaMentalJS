@@ -1,3 +1,7 @@
-setTimeout(function(){ //here function directly used as an argument
-//     console.log("This's is an anonymous function")
-// },1000)
+let p=null
+try{
+    console.log(p.property)
+}
+catch(e){
+    console.error(e)
+}
