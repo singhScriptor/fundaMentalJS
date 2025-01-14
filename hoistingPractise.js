@@ -20,3 +20,5 @@ function abc(){
 }
 abc()// here abc() will called first  which means entire function declaration will move to the top due to hoisting.
 
+
+

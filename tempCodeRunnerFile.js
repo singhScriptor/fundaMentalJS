@@ -1,7 +1,11 @@
-let p=null
-try{
-    console.log(p.property)
-}
-catch(e){
-    console.error(e)
-}
+"use strict";
+
+// function av(){
+//     console.log('Hello');
+// }
+
+// function av(){
+//     console.log('Hello');
+// }
+
+// av();
