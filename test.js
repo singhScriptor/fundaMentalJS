@@ -368,3 +368,11 @@ function outerFunction(){
 //or 
 let ans=outerFunction()
 ans()
+
+/*
+temporal deadZone: we all know in hoisting variable and function will assign at top  in that process block scope let and const before assigning the value of the variable that  will be a temporal dead zone .
+*/
+//example:
+
+
+let a= // these free lines brefore assign the variable value is in temporal dead zone 
