@@ -330,13 +330,13 @@
 
 //hoisting is a method where variable and function declaration will move at the top before before execution
 
-// console.log(v)
-// let v="Vd Madness"
-//console.log(v)
+console.log(v)
+let vi="Vd Madness"
+console.log(vi)
 
-// console.log(b)
-// var b="Madness"
-//console.log(b)
+console.log(b)
+var b="Madness"
+console.log(b)
 
 //lexical Scope
 
@@ -352,7 +352,7 @@ function first(){
 }
 first()
 
-//closure
+closure
 
 /*
 closure where the function have lexical environment and inner function can acess the outer function even after the outer function has completed the execution.
@@ -375,4 +375,92 @@ temporal deadZone: we all know in hoisting variable and function will assign at 
 //example:
 
 
-let a= // these free lines brefore assign the variable value is in temporal dead zone 
+//let a= // these free lines brefore assign the variable value is in temporal dead zone 
+
+
+//global
+
+/* 
+in global variable can be called using let const and var offcourse but we have to use only var because var is a global scope and we can call window  too in global scpe using var.
+
+*/
+
+
+
+function demoRes(){
+    let b="Gajini"
+    console.log('Hello World DUmbs'  + " " + b) 
+}
+demoRes()
+
+// 
+/*
+if you are using var for variable input then it can be renamed with same value cause it is global scope so it can be renamed with same variable
+*/
+//Example:
+var v="Hello"
+var v="World"
+console.log(v)
+
+const name="Dhiraj Kr";
+age=21
+console.log(delete name)
+console.log(delete age)// in this code delete is being used for removing  global object  and let and const not part of global scope cause it is block scope so it will be false while age will be true
+
+
+const [x,y=5]=[10]
+console.log(x+y)
+
+p="ponga Reddy"
+console.log(p)
+
+//function decalration 
+function abc(){
+    return "hello Java Script"
+}
+console.log(abc())
+
+//function reference
+let funct=function(){
+    return "function reference"
+}
+console.log(funct())
+
+let fun2=function named(){
+    console.log('named function reference')
+}
+fun2()
+
+//function reference annoymous function
+let fun3=()=>{
+    console.log('sri Radhey')
+}
+fun3()
+
+//this and window
+a="DRJ"
+// window.a
+// this.a
+
+let data={
+    a:1,
+    decode:function ans(){
+        console.log(this.a)
+    }
+
+
+}
+data.decode.call(data)
+//in call we can access the object and function seperate values by using this.
+
+let data2={
+    name:"Alice",
+    greet:function(greeting){
+        console.log(`${greeting} ${this.name}`)
+    }
+}
+let greeting="HEllo"
+let res=data2.greet.bind(data2,greeting)
+res()
+//bind creates a new function it does not call the function immedeately but but return new function to invoke later.
+
