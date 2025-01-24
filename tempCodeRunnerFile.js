@@ -1,4 +1,1 @@
-function demoRes(){
-    console.log('Hello World DUmbs')
-}
-demoRes()
+console.log(window.a)
