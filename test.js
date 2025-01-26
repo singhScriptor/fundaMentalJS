@@ -551,3 +551,27 @@ console.log('e')
 ** output will be "a,b,e,d,c"
 */
 
+class Animal{
+    constructor(name){
+        this.name = name;
+    }
+    speak(){
+        console.log(`${this.name} makes a noise`)
+    }
+}
+class Dog extends Animal{
+    constructor(name,breed){
+        super(name)
+        this.breed = breed;
+        
+    }
+    speak(){
+        console.log(`${this.name} barks`)
+    }
+    info(){
+        console.log(`${this.name} is  ${this.breed}`)
+    }
+}
+const dog=new Dog("'Rex","German Sephard");
+dog.speak()
+dog.info()
