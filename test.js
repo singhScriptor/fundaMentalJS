@@ -617,3 +617,55 @@ console.log('e')
 //     }
 // }
 // console.log(newArr)
+
+
+// let s=[1, ,3, ,5]
+// // s.forEach(function(ele,index){
+// //     console.log(`${index}: ${ele}`)
+// // })
+// for(let i=0;i<s.length;i++){
+//     console.log(`${i} : ${s[i]}`)
+// }
+
+
+//currying is method where functions transform into multiple argument in the sequence of function each taking single argument
+
+//example:
+// function add(a){
+//     return function(b){
+//         return a+b
+//     }
+// }
+// let total=add(4)
+// console.log(total(3))  
+
+// function  string(a){
+//     return function(b){
+//         if(a==="uppercase"){
+//             return b.toUpperCase()
+//         }
+//         else if(a==="lowercase"){
+//             return b.toLowerCase()
+//         }
+//         else{
+//             return b
+//         }
+//     }
+// }
+// let an=string("uppercase")
+// let lw=string('lowercase')
+// console.log(an('Hello'))
+// console.log(lw("Hey There"))
+
+function add(a){
+    return function(b){
+        return function(c){
+            return a+b+c
+        }
+    }
+}
+let ans=add(3)
+let res=ans(8)
+console.log(res(9))
+//or
+console.log(add(9)(11)(10))
