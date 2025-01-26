@@ -519,7 +519,35 @@
 
 
 //console.log(a)
-const a
-a=5
 //console.log(b)
 // console.log(window.a)
+
+// const a
+// a=1
+// function anx(){
+//     const a="Ram"
+//     console.log(a)
+// }
+// anx()
+// console.log(a)
+
+/*
+console.log("a")
+console.log("b")
+setTimeout(()=>console.log('c'),1000)
+console.log('d')
+
+** output will be a,b,d,c
+*/
+
+
+/*
+console.log('a')
+console.log('b')
+setTimeout(()=>console.log('c'),1000)
+setTimeout(()=>console.log('d'),0)
+console.log('e')
+
+** output will be "a,b,e,d,c"
+*/
+
