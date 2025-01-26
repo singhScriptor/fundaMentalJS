@@ -590,10 +590,30 @@ console.log('e')
 // let [first] = arrr
 // console.log(first)
 
-console.log(false)
-console.log(true)
-let a={a:1,b:{c:23}}
-let res={...a}
-res.b.c=46
-console.log(a)
-console.log(res)
+// console.log(false)
+// console.log(true)
+// let a={a:1,b:{c:23}}
+// let res={...a}
+// res.b.c=46
+// console.log(a)
+// console.log(res)
+
+// var a=[1,2,3,5]
+// var newArr=a.forEach((item,i) => {
+//     console.log(item+'index'+i)
+//     return item+i
+    
+// });
+// console.log(newArr)
+
+
+// let newArr=[1,2,3,4,5,6,7].map(double)
+// function double(ele,index,arr){
+//     if(ele%2===0){
+//         return ele*2
+//     }
+//     else{
+//         return ele
+//     }
+// }
+// console.log(newArr)
