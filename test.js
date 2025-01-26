@@ -551,27 +551,49 @@ console.log('e')
 ** output will be "a,b,e,d,c"
 */
 
-class Animal{
-    constructor(name){
-        this.name = name;
-    }
-    speak(){
-        console.log(`${this.name} makes a noise`)
-    }
-}
-class Dog extends Animal{
-    constructor(name,breed){
-        super(name)
-        this.breed = breed;
+// class Animal{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     speak(){
+//         console.log(`${this.name} makes a noise`)
+//     }
+// }
+// class Dog extends Animal{
+//     constructor(name,breed){
+//         super(name)
+//         this.breed = breed;
         
-    }
-    speak(){
-        console.log(`${this.name} barks`)
-    }
-    info(){
-        console.log(`${this.name} is  ${this.breed}`)
-    }
-}
-const dog=new Dog("'Rex","German Sephard");
-dog.speak()
-dog.info()
+//     }
+//     speak(){
+//         console.log(`${this.name} barks`)
+//     }
+//     info(){
+//         console.log(`${this.name} is  ${this.breed}`)
+//     }
+// }
+// const dog=new Dog("'Rex","German Sephard");
+// dog.speak()
+// dog.info()
+
+// let a=[1,2,3,4,5]
+// let b=[3,8,9,10]
+
+// console.log(...a,...b)
+
+// let arr=[1,2,3,4,5]
+// let [first,...rest]=arr
+// console.log(first)
+// console.log(rest)
+
+// let arrr=[1,2,3,4]
+// let [first] = arrr
+// console.log(first)
+
+console.log(false)
+console.log(true)
+let a={a:1,b:{c:23}}
+let res={...a}
+res.b.c=46
+console.log(a)
+console.log(res)
