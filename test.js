@@ -693,11 +693,29 @@ Currying example
 // console.log(user)
 // console.log(j)
 
-let a=40
-function fun(){
-    var a=30
-    let b=20
-    let c=30
+// let a=40
+// function fun(){
+//     var a=30
+//     let b=20
+//     let c=30
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+// }
+// fun()
+// console.log(a)
+
+
+function findMaximum(sentence){
+
+    let maxi=0
+    for(let i=0;i<sentence.length;i++){
+        let seperate=sentence[i].split(" ")
+        maxi=Math.max(maxi,seperate.length)
+    }
+    return maxi
 }
-fun()
-console.log(a)
+let sentence=["alice and bob love leetcode","i think so too","this is great thanks very much"]
+console.log(findMaximum(sentence))
+
+
