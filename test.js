@@ -657,15 +657,47 @@ console.log('e')
 // console.log(an('Hello'))
 // console.log(lw("Hey There"))
 
-function add(a){
-    return function(b){
-        return function(c){
-            return a+b+c
-        }
-    }
+// function add(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// let ans=add(3)
+// let res=ans(8)
+// console.log(res(9))
+// //or
+// console.log(add(9)(11)(10))
+
+
+/*
+Currying example 
+*/
+
+// let numbers=[1,2,3,4,5]
+// let double=numbers.map(num=>num*2)
+// console.log(double)
+
+// let string=['jack','apple','banana']
+// let upper=string.map(fr=>fr.toUpperCase())
+// console.log(upper)
+
+// let users=[
+//     {id:1,name:'Alice'},
+//     {id:2,name:"Berman"},
+//     {id:3,name:"Charlie"}
+// ]
+// let user=users.map(u=>u.name)
+// let j=users.map(b=>b.id)
+// console.log(user)
+// console.log(j)
+
+let a=40
+function fun(){
+    var a=30
+    let b=20
+    let c=30
 }
-let ans=add(3)
-let res=ans(8)
-console.log(res(9))
-//or
-console.log(add(9)(11)(10))
+fun()
+console.log(a)
